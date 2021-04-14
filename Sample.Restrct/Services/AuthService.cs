@@ -62,7 +62,7 @@ namespace Sample.Restrct.Services
 
             DateTime machineinfoLastupdatedAt = lastUpdated.GetValueOrDefault();
             DateTime end = DateTime.UtcNow;
-            DateTime start = DateTime.UtcNow.AddSeconds(-12);
+            DateTime start = DateTime.UtcNow.AddSeconds(-15);
             return (start <= machineinfoLastupdatedAt && machineinfoLastupdatedAt <= end);
         }
     }
